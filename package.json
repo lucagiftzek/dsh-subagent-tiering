@@ -1,5 +1,5 @@
 {
-  "name": "dsh-subagent-tiering",
+  "name": "@lucagiftzek/dsh-subagent-tiering",
   "version": "0.1.0",
   "description": "Default each subagent to a cheaper sibling of its parent's model (Opus -> Sonnet, Qwen max -> Qwen flash, ...); the main agent can still name any allowed route.",
   "type": "module",
@@ -29,12 +29,12 @@
     }
   },
   "keywords": [
+    "cost",
+    "deepseek-harness",
     "dsh",
     "dsh-plugin",
-    "deepseek-harness",
-    "subagent",
-    "cost",
-    "model-routing"
+    "model-routing",
+    "subagent"
   ],
   "author": {
     "name": "Luca Tzekos",
@@ -47,5 +47,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lucagiftzek/dsh-subagent-tiering.git"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

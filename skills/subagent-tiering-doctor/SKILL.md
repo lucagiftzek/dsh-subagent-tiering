@@ -15,7 +15,7 @@ the log says why. It has no routes, tools or UI.
 - Do not print `settings.yaml` or profile rows beyond the relevant lines; they can hold secrets.
 
 ## 0. Facts (read-only)
-1. Plugin dir: `node -p "require('path').dirname(require.resolve('dsh-subagent-tiering/package.json',{paths:[(process.env.DSH_HOME||require('os').homedir()+'/.dsh')+'/profiles/web']}))"`
+1. Plugin dir: `node -p "require('path').dirname(require.resolve('@lucagiftzek/dsh-subagent-tiering/package.json',{paths:[(process.env.DSH_HOME||require('os').homedir()+'/.dsh')+'/profiles/web']}))"`
    Docs: `<plugin dir>/docs/TROUBLESHOOTING.md`, `docs/ERRORS.md`, built-in rules in `src/rules.js`.
 2. `dsh --version` (0.1.x or 0.2.x matters for entry 7).
 3. Log: `journalctl -u <your-dsh-unit> --since today | grep subagent-tiering | tail -20`

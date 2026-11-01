@@ -1,9 +1,12 @@
 # dsh-subagent-tiering
 
+[![npm](https://img.shields.io/npm/v/%40lucagiftzek%2Fdsh-subagent-tiering?label=npm)](https://www.npmjs.com/package/@lucagiftzek/dsh-subagent-tiering)
+
 Subagents run on a cheaper sibling of the parent model unless the agent names a route.
 
 ```bash
-dsh plugin --profile web add github:lucagiftzek/dsh-subagent-tiering
+dsh plugin --profile web add @lucagiftzek/dsh-subagent-tiering
+# or from GitHub: dsh plugin --profile web add github:lucagiftzek/dsh-subagent-tiering
 # then restart dsh web
 ```
 
@@ -14,8 +17,11 @@ names a route itself.
 
 ## Install
 
+Install from npm: `dsh plugin --profile web add @lucagiftzek/dsh-subagent-tiering`, or from GitHub: `dsh plugin --profile web add github:lucagiftzek/dsh-subagent-tiering`.
+
 ```bash
-dsh plugin --profile web add github:lucagiftzek/dsh-subagent-tiering
+dsh plugin --profile web add @lucagiftzek/dsh-subagent-tiering
+# or from GitHub: dsh plugin --profile web add github:lucagiftzek/dsh-subagent-tiering
 # then restart `dsh web`
 ```
 

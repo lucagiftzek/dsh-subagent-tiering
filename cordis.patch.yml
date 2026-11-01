@@ -3,6 +3,6 @@
 # cordis.patch.yml may override with a "- id: subagent-tiering" row.
 - insert:
     - id: subagent-tiering
-      name: dsh-subagent-tiering
+      name: '@lucagiftzek/dsh-subagent-tiering'
       config:
         enabled: true
