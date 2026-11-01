@@ -1,0 +1,8 @@
+# Copyright © 2026 · SPDX-License-Identifier: MIT
+# Mount subagent tiering with its built-in rules (src/rules.js). The profile's own
+# cordis.patch.yml may override with a "- id: subagent-tiering" row.
+- insert:
+    - id: subagent-tiering
+      name: dsh-subagent-tiering
+      config:
+        enabled: true

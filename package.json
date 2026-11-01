@@ -1,0 +1,51 @@
+{
+  "name": "dsh-subagent-tiering",
+  "version": "0.1.0",
+  "description": "Default each subagent to a cheaper sibling of its parent's model (Opus -> Sonnet, Qwen max -> Qwen flash, ...); the main agent can still name any allowed route.",
+  "type": "module",
+  "main": "src/index.js",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "files": [
+    "src",
+    "docs",
+    "skills",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.2"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "subagent",
+    "cost",
+    "model-routing"
+  ],
+  "author": {
+    "name": "Luca Tzekos",
+    "url": "https://jobopportunitiesapi.org"
+  },
+  "homepage": "https://github.com/lucagiftzek/dsh-subagent-tiering#readme",
+  "bugs": {
+    "url": "https://github.com/lucagiftzek/dsh-subagent-tiering/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucagiftzek/dsh-subagent-tiering.git"
+  }
+}
